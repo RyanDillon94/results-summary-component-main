@@ -1,11 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 #Footer P {
-  color: var(--White);
+  color: white;
   font-size: 14px;
   font-weight: 700;
   margin: 5px;
 }
 
 Footer {
+  bottom: 0;
+  position: absolute;
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
