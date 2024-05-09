@@ -1,0 +1,27 @@
+#Footer P {
+  color: var(--White);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+Footer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+Footer a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+Footer a:hover {
+  color: #ff9c6c;
+}
+
+#Footer {
+  margin: 0;
+}
