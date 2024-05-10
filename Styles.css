@@ -1,37 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Hanken Grotesk", "Comic Sans MS";
+}
+:root {
+  font-size: 18px;
+  --Standard
+  /* Colors */
+  /* ### Primary */
+  --LightRed: hsl(0, 100%, 67%);
+  --OrangeyYellow: hsl(39, 100%, 56%);
+  --GreenTeal: hsl(166, 100%, 37%);
+  --CobaltBlue: hsl(234, 85%, 45%);
+  /* ## Gradients */
+  --LightSlateBlue(background): hsl(252, 100%, 67%);
+  --LightRoyalBlue(background): hsl(241, 81%, 54%);
+  --VioletBlue(circle): hsla(256, 72%, 46%, 1);
+  --PersianBlue(circle): hsla(241, 72%, 46%, 0);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --PaleBlue: hsl(221, 100%, 96%);
+  --LightLavender: hsl(241, 100%, 89%);
+  --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
 * {
-	box-sizing: border-box;
-	margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* 
 Footer Items 
 */
 #Footer P {
-	color: white;
-	font-size: 14px;
-	font-weight: 700;
-	margin: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px;
 }
 
 Footer {
-	bottom: 0;
-	position: absolute;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	width: 100%;
-	text-align: center;
-	background-color: black;
+  bottom: 0;
+  position: absolute;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
 }
 
 Footer a {
-	color: #00ff00;
-	text-decoration: none;
+  color: #00ff00;
+  text-decoration: none;
 }
 
 Footer a:hover {
-	color: #ff9c6c;
+  color: #ff9c6c;
 }
 
 #Footer {
-	margin: 0;
+  margin: 0;
 }
