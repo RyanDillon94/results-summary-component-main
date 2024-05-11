@@ -33,6 +33,13 @@ body {
   background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
 }
 
+.White {
+  background-color: var(--White);
+}
+
+h1 {
+  color: var(--LightLavender);
+}
 h2, h3 {
   color: var(--White);
 }
