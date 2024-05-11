@@ -16,7 +16,7 @@ body {
   --LightSlateBlue(background): hsl(252, 100%, 67%);
   --LightRoyalBlue(background): hsl(241, 81%, 54%);
   --VioletBlue(circle): hsla(256, 72%, 46%, 1);
-  --PersianBlue(circle): hsla(241, 72%, 46%, 0);
+  --PersianBlue(circle): hsla(241, 72%, 46%, 1);
   /* ### Neutral */
   --White: hsl(0, 0%, 100%);
   --PaleBlue: hsl(221, 100%, 96%);
@@ -29,6 +29,9 @@ body {
   margin: 0;
 }
 
+.Blue {
+  background-image: linear-gradient (var(--LightSlateBlue,var(--LightRoyalBlue)));
+}
 /* 
 Footer Items 
 */
