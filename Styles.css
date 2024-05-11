@@ -15,12 +15,13 @@ body {
   /* ## Gradients */
   --LightSlateBlue: hsl(252, 100%, 67%);
   --LightRoyalBlue: hsl(241, 81%, 54%);
-  --VioletBlue(circle): hsla(256, 72%, 46%, 1);
-  --PersianBlue(circle): hsla(241, 72%, 46%, 1);
+  --VioletBlue: hsla(256, 72%, 46%, 1);
+  --PersianBlue: hsla(241, 72%, 46%, 1);
   /* ### Neutral */
   --White: hsl(0, 0%, 100%);
   --PaleBlue: hsl(221, 100%, 96%);
-  --LightLavender: hsl(241, 100%, 89%);
+  --LightLavender: hsla(241, 100%, 89%, 1);
+  --LightLavender2: hsla(241, 100%, 89%, .5);
   --DarkGrayBlue: hsl(224, 30%, 27%);
 }
 
@@ -29,6 +30,11 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 .Blue {
   background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
 }
@@ -37,11 +43,24 @@ body {
   background-color: var(--White);
 }
 
+.outOf {
+  color: var(--LightLavender2);
+}
 h1 {
   color: var(--LightLavender);
 }
 h2, h3 {
   color: var(--White);
+}
+
+.overallSummary {
+  display: flex;
+  flex-direction: column;
+}
+.overallScore {
+  background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+  border-radius: 50%;
+  width: 3em
 }
 /* 
 Footer Items 
