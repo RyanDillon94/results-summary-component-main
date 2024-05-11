@@ -13,8 +13,8 @@ body {
   --GreenTeal: hsl(166, 100%, 37%);
   --CobaltBlue: hsl(234, 85%, 45%);
   /* ## Gradients */
-  --LightSlateBlue(background): hsl(252, 100%, 67%);
-  --LightRoyalBlue(background): hsl(241, 81%, 54%);
+  --LightSlateBlue: hsl(252, 100%, 67%);
+  --LightRoyalBlue: hsl(241, 81%, 54%);
   --VioletBlue(circle): hsla(256, 72%, 46%, 1);
   --PersianBlue(circle): hsla(241, 72%, 46%, 1);
   /* ### Neutral */
@@ -30,7 +30,11 @@ body {
 }
 
 .Blue {
-  background-image: linear-gradient (var(--LightSlateBlue,var(--LightRoyalBlue)));
+  background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+}
+
+h2, h3 {
+  color: var(--White);
 }
 /* 
 Footer Items 
