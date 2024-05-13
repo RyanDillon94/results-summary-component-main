@@ -5,13 +5,16 @@ body {
 }
 :root {
   font-size: 18px;
-  --Standard
   /* Colors */
   /* ### Primary */
   --LightRed: hsl(0, 100%, 67%);
+  --LightRed2: hsla(0, 100%, 67%, 0.1);
   --OrangeyYellow: hsl(39, 100%, 56%);
+  --OrangeyYellow2: hsla(39, 100%, 56%, 0.1);
   --GreenTeal: hsl(166, 100%, 37%);
+  --GreenTeal2: hsla(166, 100%, 37%, 0.1);
   --CobaltBlue: hsl(234, 85%, 45%);
+  --CobaltBlue2: hsla(234, 85%, 45%, 0.1);
   /* ## Gradients */
   --LightSlateBlue: hsla(252, 100%, 67%, 1);
   --LightRoyalBlue: hsla(241, 81%, 54%, 1);
@@ -21,7 +24,7 @@ body {
   --White: hsl(0, 0%, 100%);
   --PaleBlue: hsl(221, 100%, 96%);
   --LightLavender: hsla(241, 100%, 89%, 1);
-  --LightLavender2: hsla(241, 100%, 89%, .5);
+  --LightLavender2: hsla(241, 100%, 89%, 0.5);
   --DarkGrayBlue: hsl(224, 30%, 27%);
 }
 
@@ -58,7 +61,8 @@ h1 {
   margin-bottom: 1.5em;
   font-weight: 600;
 }
-h2, h3 {
+h2,
+h3 {
   color: var(--White);
 }
 
@@ -67,11 +71,17 @@ h2 {
 }
 
 h3 {
-margin-top: 1.5em;
-font-size: 1.5rem;
-font-weight: 600;
+  margin-top: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
+h4 {
+  margin-top: 1.5em;
+  text-align: start;
+  margin-left: 2em;
+  margin-bottom: 1.2em;
+}
 .overallSummary {
   display: flex;
   flex-direction: column;
@@ -81,7 +91,9 @@ font-weight: 600;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
-  padding: 1.2em;
+  padding: 1.5em;
+  width: 8em;
+  height: 8em;
 }
 
 .resultWording {
@@ -96,6 +108,53 @@ font-weight: 600;
   width: 16em;
   font-weight: 400;
 }
+
+.Summary {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+table {
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  font-weight: 700;
+}
+
+td {
+  padding: 1em;
+}
+
+img {
+  margin-right: 1.5em;
+}
+
+tr {
+  width: 5em;
+}
+
+.Reaction {
+  background-color: var(--LightRed2);
+  color: var(--LightRed);
+}
+
+.Memory {
+  background-color: var(--OrangeyYellow2);
+  color: var(--OrangeyYellow);
+}
+
+.Verbal {
+  background-color: var(--GreenTeal2);
+  color: var(--GreenTeal);
+}
+
+.Visual {
+  background-color: var(--CobaltBlue2);
+  color: var(--CobaltBlue);
+}
+/* --LightRed: hsl(0, 100%, 67%);
+  --OrangeyYellow: hsl(39, 100%, 56%);
+  --GreenTeal: hsl(166, 100%, 37%);
+  --CobaltBlue: hsl(234, 85%, 45%); */
 /* 
 Footer Items 
 */
