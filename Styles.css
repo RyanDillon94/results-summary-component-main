@@ -43,7 +43,7 @@ body {
 }
 .Blue {
   background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
-  height: 23.5em;
+  height: 23em;
   border-radius: 0 0 10% 10%;
 }
 
@@ -107,7 +107,7 @@ h4 {
 .resultWording p {
   color: var(--LightLavender);
   margin-top: 1em;
-  width: 16em;
+  width: 20em;
   font-weight: 400;
 }
 
@@ -189,9 +189,8 @@ button {
   font-size: 1.1rem;
   font-weight: 400;
   border-radius: 50px;
-  padding: 2em;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding: 1em;
+  width: 90%;
 }
 /* --LightRed: hsl(0, 100%, 67%);
   --OrangeyYellow: hsl(39, 100%, 56%);
