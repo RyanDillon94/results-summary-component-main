@@ -43,7 +43,7 @@ body {
 }
 .Blue {
   background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
-  height: 22em;
+  height: 23.5em;
   border-radius: 0 0 10% 10%;
 }
 
@@ -79,10 +79,10 @@ h3 {
 }
 
 h4 {
-  margin-top: 1.5em;
+  margin-top: 0.8em;
   text-align: start;
   margin-left: 2em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.6em;
 }
 .overallSummary {
   display: flex;
