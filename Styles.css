@@ -8,13 +8,13 @@ body {
   /* Colors */
   /* ### Primary */
   --LightRed: hsl(0, 100%, 67%);
-  --LightRed2: hsla(0, 100%, 67%, 0.1);
+  --LightRed2: hsla(0, 100%, 67%, 0.09);
   --OrangeyYellow: hsl(39, 100%, 56%);
-  --OrangeyYellow2: hsla(39, 100%, 56%, 0.1);
+  --OrangeyYellow2: hsla(39, 100%, 56%, 0.09);
   --GreenTeal: hsl(166, 100%, 37%);
-  --GreenTeal2: hsla(166, 100%, 37%, 0.1);
+  --GreenTeal2: hsla(166, 100%, 37%, 0.09);
   --CobaltBlue: hsl(234, 85%, 45%);
-  --CobaltBlue2: hsla(234, 85%, 45%, 0.1);
+  --CobaltBlue2: hsla(234, 85%, 45%, 0.09);
   /* ## Gradients */
   --LightSlateBlue: hsla(252, 100%, 67%, 1);
   --LightRoyalBlue: hsla(241, 81%, 54%, 1);
@@ -26,6 +26,7 @@ body {
   --PaleBlue: hsl(221, 100%, 96%);
   --LightLavender: hsla(241, 100%, 89%, 1);
   --LightLavender2: hsla(241, 100%, 89%, 0.5);
+  --LightLavender3: hsla(241, 100%, 89%, 0.2);
   --DarkGrayBlue: hsl(224, 30%, 27%);
   --DarkGrayBlue2: hsla(224, 30%, 27%, 0.5);
 }
@@ -39,7 +40,10 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 2.5rem;
 }
 .Blue {
   background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
@@ -191,12 +195,59 @@ button {
   border-radius: 50px;
   padding: 1em;
   width: 90%;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
 }
 /* --LightRed: hsl(0, 100%, 67%);
   --OrangeyYellow: hsl(39, 100%, 56%);
   --GreenTeal: hsl(166, 100%, 37%);
   --CobaltBlue: hsl(234, 85%, 45%); */
-/* 
+
+@media screen and (min-width: 500px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px 10px var(--LightLavender3);
+  }
+  .Blue {
+    border-radius: 10% 10% 10% 10%;
+    width: 17em;
+  }
+  .White {
+    border-radius: 10% 10% 5% 10%;
+  }
+  .resultWording {
+    font-size: 0.75rem;
+  }
+  .resultWording p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .Summary {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  .Result {
+    padding-left: 4em;
+  }
+  button {
+    padding: 0.6em;
+    width: 85%;
+  }
+}
+
+/*
 Footer Items 
 */
 #Footer P {
