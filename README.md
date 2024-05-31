@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-- Mainly built on Laptop, had a lot of overriding styles when doing the finer details which took a bit of time to work out.
+- Mainly built on Laptop, had a lot of overwriting styles when doing the finer details which took a bit of time to work out.
 
 ### Continued development
 
